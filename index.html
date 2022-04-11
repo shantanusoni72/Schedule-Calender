@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Calender</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.js"></script>
+
+    <!--
+  <link rel="stylesheet" href="./fullcalendar/main.min.css">
+  <script src="./fullcalendar/main.min.js" defer></script>
+  -->
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <div id="clock">8:10:45</div>
+    <div class="todo-grid-parent">
+
+        <div>
+            <div class="todo-input todo-block">
+                <span>To-do: </span>
+                <input type="text" placeholder="Enter new to-do">
+                <span>Date:</span>
+                <input type="date" id="dateInput">
+                <span>Time:</span>
+                <input type="time" id="timeInput">
+                <span></span>
+                <button id="addBtn">Add</button>
+
+            </div>
+
+            <table id="todoTable" class=" todo-block">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Time</td>
+                    <td>Task</td>
+                    <td>Date</td>
+
+                </tr>
+            </table>
+        </div>
+
+        <div class="todo-calendar  todo-block">
+            <div id='calendar'></div>
+        </div>
+
+    </div>
+    <!-- class="todo-grid-parent" -->
+
+    
+
+</body>
+
+</html>
